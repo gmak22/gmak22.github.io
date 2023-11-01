@@ -37,7 +37,7 @@ const HeroSection = () => {
             </TextLoop>
 
             <ResumeButton
-              id="resume-link-2"
+              id="resume-button-2"
               href={Bio.resume}
               target="_blank"
               onClick={() => {

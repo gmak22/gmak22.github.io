@@ -61,7 +61,7 @@ const Navbar = () => {
             Contact
           </NavLink>
           <NavLink
-            id="resume-link-1"
+            id="resume-button-1"
             className="nav-link resume"
             href={Bio.resume}
             target="_blank"

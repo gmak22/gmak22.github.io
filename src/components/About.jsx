@@ -17,9 +17,9 @@ export const About = () => {
   };
 
   return (
-    <div id="about" style={{ minHeight: "80vh" }}>
+    <div id="about" className="about section" style={{ minHeight: "80vh" }}>
       <Title style={{ color: "white" }}>About</Title>
-      <DIV className="about section">
+      <DIV>
         <div>
           <img src={coder} alt="mak" />
         </div>
