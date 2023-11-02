@@ -38,15 +38,9 @@ const HeroSection = () => {
 
             <ResumeButton
               id="resume-button-2"
-              onClick={() => {
-                window.open(Bio.resume, "_blank",)
-                const link = document.createElement("a");
-                link.href = Resume;
-                link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
-                link.click();
-              }}
+              onClick={() => { window.open(Bio.resume, "_blank") }}
             >
-              Download Resume
+              <a download href={Resume} style={{color: "white", textDecoration: "none"}}> Download Resume </a>
             </ResumeButton>
           </HeroLeftContainer>
 
