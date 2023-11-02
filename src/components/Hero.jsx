@@ -11,9 +11,9 @@ import {
   ResumeButton,
 } from "../styles/Hero";
 import HeroImg from "../assets/HeroImage_new.png";
-import Resume from "../assets/Makarand-Gijam-Resume.pdf";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -36,12 +36,19 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
 
-            <ResumeButton
-              id="resume-button-2"
-              onClick={() => { window.open(Bio.resume, "_blank") }}
+            <Link
+              className="nav-link resume"
+              to="https://drive.google.com/uc?export=download&id=1SmJXZ5c4q4UdQl2xTRkQ2zKs18GkhRQ5"
             >
-              <a id="resume-link-2" download href={Resume} style={{color: "white", textDecoration: "none"}} target="_blank"> Download Resume </a>
-            </ResumeButton>
+              <ResumeButton
+                id="resume-button-2"
+                onClick={() => {
+                  window.open(Bio.resume, "_blank");
+                }}
+              >
+                Download Resume
+              </ResumeButton>
+            </Link>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
