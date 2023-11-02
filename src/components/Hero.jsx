@@ -40,7 +40,7 @@ const HeroSection = () => {
               id="resume-button-2"
               onClick={() => { window.open(Bio.resume, "_blank") }}
             >
-              <a id="resume-link-2" download href={Resume} style={{color: "white", textDecoration: "none"}}> Download Resume </a>
+              <a id="resume-link-2" download href={Resume} style={{color: "white", textDecoration: "none"}} target="_blank"> Download Resume </a>
             </ResumeButton>
           </HeroLeftContainer>
 
