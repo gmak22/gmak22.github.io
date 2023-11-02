@@ -11,14 +11,14 @@ import {
   ResumeButton,
 } from "../styles/Hero";
 import HeroImg from "../assets/HeroImage_new.png";
+import Resume from "../assets/Makarand-Gijam-Resume.pdf";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div>
-      <HeroContainer id="home">
+    <div id="home">
+      <HeroContainer>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title id="user-detail-name">
@@ -36,19 +36,20 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
 
-            <Link
+            <ResumeButton
+              id="resume-button-2"
               className="nav-link resume"
-              to="https://drive.google.com/uc?export=download&id=1SmJXZ5c4q4UdQl2xTRkQ2zKs18GkhRQ5"
+              onClick={() => {
+                window.open("https://www.dropbox.com/scl/fi/s9sdxgbun54jazfavwyhl/Makarand-Gijam-Resume.pdf?rlkey=ek5081slf74kl7a4pkcjsvqkc&dl=0", "_blank")
+                const link = document.createElement("a");
+                link.className = "resume-link-2"
+                link.href = Resume;
+                link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
+                link.click();
+              }}
             >
-              <ResumeButton
-                id="resume-button-2"
-                onClick={() => {
-                  window.open(Bio.resume, "_blank");
-                }}
-              >
-                Download Resume
-              </ResumeButton>
-            </Link>
+              Download Resume
+            </ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
