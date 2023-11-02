@@ -38,9 +38,8 @@ const HeroSection = () => {
 
             <ResumeButton
               id="resume-button-2"
-              href={Bio.resume}
-              target="_blank"
               onClick={() => {
+                window.open(Bio.resume, "_blank",)
                 const link = document.createElement("a");
                 link.href = Resume;
                 link.setAttribute("download", "Makarand-Gijam-Resume.pdf");

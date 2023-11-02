@@ -2,7 +2,7 @@ export const Bio = {
   name: "Makarand Gijam",
   roles: ["Full Stack Web Developer"],
   description:
-    "I am a committed fullstack web developer with a strong passion for lifelong learning and expertise in the MERN stack. My goal is to create user-friendly websites using frontend technologies like HTML, CSS and javaScript, paying close attention to detail and using problem-solving skills. I am highly resilient and focused on learning new techniques to build real-world websites. ",
+    "I am a committed fullstack web developer with a strong passion for lifelong learning and expertise in the MERN stack. My goal is to create user-friendly websites using frontend technologies like HTML, CSS and javaScript, paying close attention to detail and using problem-solving skills. I am highly resilient and focused on learning new techniques to build real-world websites.",
   github: "https://github.com/gmak22",
   resume:
     "https://drive.google.com/file/d/1SmJXZ5c4q4UdQl2xTRkQ2zKs18GkhRQ5/view",
