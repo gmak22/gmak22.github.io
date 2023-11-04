@@ -16,16 +16,6 @@ import Typewriter from "typewriter-effect";
 import { Bio } from "../data/constants";
 
 const HeroSection = () => {
-  const handleResumeButtonClick = () => {
-    window.open(Bio.resume, "_blank");
-    if (Resume) {
-      const link = document.createElement("a");
-      link.href = Resume;
-      link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
-      link.click();
-    }
-  };
-
   return (
     <div id="home">
       <HeroContainer>
@@ -48,8 +38,12 @@ const HeroSection = () => {
 
             <ResumeButton
               id="resume-button-2"
-              className="nav-link resume"
-              onClick={handleResumeButtonClick}
+              href={Resume}
+              download
+              target="_blank"
+              onClick={() => {
+                window.open(Bio.resume, "_blank", "noreferrer");
+              }}
             >
               Download Resume
             </ResumeButton>
