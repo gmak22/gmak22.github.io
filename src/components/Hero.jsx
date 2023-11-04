@@ -18,7 +18,7 @@ import { Bio } from "../data/constants";
 const HeroSection = () => {
   const handleResumeButtonClick = () => {
     window.open(Bio.resume, "_blank");
-    if (resume) {
+    if (Resume) {
       const link = document.createElement("a");
       link.href = Resume;
       link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
