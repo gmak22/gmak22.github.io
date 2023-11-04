@@ -18,10 +18,12 @@ import { Bio } from "../data/constants";
 const HeroSection = () => {
   const handleResumeButtonClick = () => {
     window.open(Bio.resume, "_blank");
-    const link = document.createElement("a");
-    link.href = Resume;
-    link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
-    link.click();
+    if (resume) {
+      const link = document.createElement("a");
+      link.href = Resume;
+      link.setAttribute("download", "Makarand-Gijam-Resume.pdf");
+      link.click();
+    }
   };
 
   return (
