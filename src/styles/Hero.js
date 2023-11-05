@@ -151,8 +151,11 @@ export const Span = styled.span`
   cursor: pointer;
 `;
 
-export const ResumeButton = styled.button`
-  border: none;
+export const ResumeButton = styled.a`
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
   width: 95%;
   max-width: 300px;
   text-align: center;

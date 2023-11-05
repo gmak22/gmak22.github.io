@@ -44,12 +44,14 @@ const HeroSection = () => {
 
             <ResumeButton
               id="resume-button-2"
+              href={Resume}
+              download="Makarand-Gijam-Resume.pdf"
+              target="_blank"
               onClick={() => {
                 window.open(Bio.resume, "_blank");
-                link.click();
               }}
             >
-              Download Resume
+              Resume
             </ResumeButton>
           </HeroLeftContainer>
 
