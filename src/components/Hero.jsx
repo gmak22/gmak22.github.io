@@ -51,7 +51,7 @@ const HeroSection = () => {
                 window.open(Bio.resume, "_blank");
               }}
             >
-              Resume
+              Download Resume
             </ResumeButton>
           </HeroLeftContainer>
 
