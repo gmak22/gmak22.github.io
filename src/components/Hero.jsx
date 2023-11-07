@@ -47,9 +47,9 @@ const HeroSection = () => {
               href={Resume}
               download="Makarand-Gijam-Resume.pdf"
               target="_blank"
-              onClick={() => {
-                window.open(Bio.resume, "_blank");
-              }}
+              // onClick={() => {
+              //   window.open(Bio.resume, "_blank");
+              // }}
             >
               Download Resume
             </ResumeButton>
