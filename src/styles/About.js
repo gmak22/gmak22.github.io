@@ -14,6 +14,7 @@ export const SubTitle = styled.div`
 `;
 
 export const Title = styled.div`
+  color: var(--text-color2);
   padding-top: 1.8em;
   font-size: 42px;
   text-align: center;
@@ -24,7 +25,7 @@ export const Title = styled.div`
 `;
 
 export const DIV = styled.div`
-  color: aliceblue;
+  color: var(--text-color1);
   width: 70%;
   margin: auto;
   margin-top: 50px;

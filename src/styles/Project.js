@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import _default from "./Default";
+import "../App.css"
 
 export const Container = styled.div`
   margin-bottom: 20px;
@@ -27,23 +28,11 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
 export const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
+  color: var(--text-color2);
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
@@ -52,8 +41,8 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+  border: 1.5px solid ;
+  color:  var(--btn-color);
   font-size: 16px;
   border-radius: 12px;
   font-weight: 500;
@@ -82,7 +71,7 @@ export const ToggleButton = styled.div`
 `;
 export const Divider = styled.div`
   width: 1.5px;
-  background: ${({ theme }) => theme.primary};
+  /* background: ${({ theme }) => theme.primary}; */
 `;
 
 export const CardContainer = styled.div`

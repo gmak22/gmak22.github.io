@@ -27,15 +27,15 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
+	font-size: 42px;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 20px;
+	color: var(--text-color2);
+	@media (max-width: 768px) {
+		margin-top: 12px;
+		font-size: 32px;
+	}
 `;
 
 export const Desc = styled.div`
@@ -53,7 +53,7 @@ export const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
+  background-color: #1a1b27;
   padding: 32px;
   border-radius: 16px;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -63,9 +63,10 @@ export const ContactForm = styled.form`
 
 export const ContactTitle = styled.div`
   font-size: 24px;
+  margin: auto;
   margin-bottom: 6px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: white;
 `;
 
 export const ContactInput = styled.input`
@@ -99,27 +100,12 @@ export const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
+  background-color: var(--btn-color);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
   border: none;
-  color: ${({ theme }) => theme.text_primary};
+  color: white;
   font-size: 18px;
   font-weight: 600;
 `;

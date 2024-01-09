@@ -17,7 +17,7 @@ const Form = () => {
     <Container>
       <Wrapper>
         <ContactForm ref={form}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactTitle>Email Me 📩</ContactTitle>
           <ContactInput placeholder="Your Email" />
           <ContactInput placeholder="Your Name" />
           <ContactInputMessage placeholder="Message" rows="8" />

@@ -5,10 +5,10 @@ import { ButtonGroup, Button } from "./ProjectDetails";
 const Card = styled.div`
   width: 330px;
   height: 490px;
-  background-color: ${({ theme }) => theme.card};
+  background-color: var(--cardbg-color);
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+  //box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -40,12 +40,13 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.span`
-  border: 1px solid wheat;
-  color: wheat;
+  background-color: var(--text-color2);
+  border: 1px solid var(--text-color2);
+  color: white;
   font-size: 12px;
   font-weight: 400;
   padding: 2px 8px;
-  border-radius: 10px;
+  border-radius: 4px;
 `;
 
 const Details = styled.div`
@@ -55,10 +56,11 @@ const Details = styled.div`
   gap: 0px;
   padding: 0px 2px;
 `;
+
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color:  var(--text-color2);
   overflow: hidden;
   display: -webkit-box;
   max-width: 100%;
@@ -70,7 +72,7 @@ const Title = styled.div`
 
 const Description = styled.div`
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color:  var(--text-color2);
   overflow: hidden;
   margin-top: 8px;
   display: -webkit-box;
@@ -93,7 +95,9 @@ const ProjectCard = ({ project, setOpenModal }) => {
         ))}
       </Tags>
       <Details>
-        <Title className="project-title" style={{color:"white"}}>{project.title}</Title>
+        <Title className="project-title">
+          {project.title}
+        </Title>
         <Description className="project-description">
           {project.description}
         </Description>

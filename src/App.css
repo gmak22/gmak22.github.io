@@ -11,11 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --background-color: #DDF2FD;
+  --navbar-color: #164863;
+  --text-color1: gray;
+  --text-color2: #164863;
+  --btn-color: #164863;
+  --nav-btn-color: #fff083;
+  --cardbg-color: #9BBEC8;
+}
+
 body {
   margin: 0px !important;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: black !important;
+  background: var(--background-color) !important;
 }
 
 .code {
@@ -30,16 +40,20 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #222a35;
+  background: var(--text-color1);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #575c66;
+  background: var(--btn-color);
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #626970;
+  background: var(--text-color1);
+}
+
+.nav-link.active {
+  color: #fff083;
 }

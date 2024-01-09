@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import _default from "./Default";
+import "../App.css";
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -98,7 +99,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid var(--btn-color);
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -114,7 +115,7 @@ export const Img = styled.img`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
-  color: ${({ theme }) => theme.text_primary};
+  color: var(--text-color1);
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -132,13 +133,12 @@ export const TextLoop = styled.div`
   font-size: 32px;
   display: flex;
   gap: 12px;
-  color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
 
   @media (max-width: 960px) {
     text-align: center;
   }
-  
+
   @media (max-width: 640px) {
     font-size: 22px;
     line-height: 48px;
@@ -147,7 +147,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
+  color: var(--btn-color);
   cursor: pointer;
 `;
 
@@ -160,33 +160,17 @@ export const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-  color: ${({ theme }) => theme.white};
+  color: white;
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  background-color: var(--btn-color);
+
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
   }
 

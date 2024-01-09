@@ -3,7 +3,7 @@ import styled from "styled-components";
 import _default from "./Default";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card_light};
+  background-color: var(--navbar-color);
   height: 65px;
   display: flex;
   align-items: center;
@@ -59,37 +59,37 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
+  color: white;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({ theme }) => theme.primary};
+    color: var(--nav-btn-color);
   }
 
   &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+    border-bottom: 2px solid var(--btn-color);
   }
 `;
 
-export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+export const ResumeButton = styled.a`
+  border: 1.8px solid var(--nav-btn-color);
+  color: var(--nav-btn-color);
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.4s ease-in-out;
   :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    background: var(--nav-btn-color);
+    color: var(--navbar-color);
   }
   @media screen and (max-width: 768px) {
     font-size: 14px;

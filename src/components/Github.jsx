@@ -4,32 +4,16 @@ import styled from "styled-components";
 import { Title } from "../styles/Title";
 
 export const Github = () => {
-  const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 7;
-
-    return contributions.filter((activity) => {
-      const date = new Date(activity.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
-
   const style = {
     border: "1px solid white",
     borderRadius: "5px",
     padding: "8px",
-    color: "white",
+    color: "#38bdae",
     fontWeight: "bolder",
     display: "block",
     margin: "auto",
     marginBottom: "1em",
+    backgroundColor:"#1a1b27",
   };
 
   return (
@@ -41,7 +25,6 @@ export const Github = () => {
         blockSize={25}
         blockRadius={8}
         fontSize={14}
-        transformData={selectLastHalfYear}
         hideColorLegend
         labels={{
           totalCount: "{{count}} contributions in the last half year",
