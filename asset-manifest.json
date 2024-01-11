@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.842a4071.css",
-    "main.js": "/static/js/main.26d81df1.js",
+    "main.js": "/static/js/main.b1c44f75.js",
     "static/js/787.85b66374.chunk.js": "/static/js/787.85b66374.chunk.js",
     "static/media/coder.jpg": "/static/media/coder.9a8588abb9d8f86d905e.jpg",
     "static/media/HeroImage_new.png": "/static/media/HeroImage_new.a00c9ea395772738f954.png",
     "static/media/Makarand-Gijam-Resume.pdf": "/static/media/Makarand-Gijam-Resume.c5ce673f32012edfe54d.pdf",
     "index.html": "/index.html",
     "main.842a4071.css.map": "/static/css/main.842a4071.css.map",
-    "main.26d81df1.js.map": "/static/js/main.26d81df1.js.map",
+    "main.b1c44f75.js.map": "/static/js/main.b1c44f75.js.map",
     "787.85b66374.chunk.js.map": "/static/js/787.85b66374.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.842a4071.css",
-    "static/js/main.26d81df1.js"
+    "static/js/main.b1c44f75.js"
   ]
 }
