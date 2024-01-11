@@ -19,8 +19,9 @@ export const Contact = () => {
 const DIV = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+ 
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
